@@ -15,11 +15,11 @@ ScreenWidth = 800
 win = pygame.display.set_mode((ScreenWidth,ScreenHeight))
 pygame.display.set_caption("Stick Figure Game")
 
-walkRight = [pygame.image.load('R1_.png'), pygame.image.load('R2_.png'), pygame.image.load('R3_.png'), pygame.image.load('R4_.png'), pygame.image.load('R5_.png'), pygame.image.load('R6_.png'), pygame.image.load('R7_.png'), pygame.image.load('R8_.png'), pygame.image.load('R9_.png'),pygame.image.load('ShootingR_.png')]
-walkLeft = [pygame.image.load('L1_.png'), pygame.image.load('L2_.png'), pygame.image.load('L3_.png'), pygame.image.load('L4_.png'), pygame.image.load('L5_.png'), pygame.image.load('L6_.png'), pygame.image.load('L7_.png'), pygame.image.load('L8_.png'), pygame.image.load('L9_.png'),pygame.image.load('ShootingL_.png')]
-bg = pygame.image.load('bg.png')
-end = pygame.image.load('EndGame_.png')
-char = pygame.image.load('standing_.png')
+walkRight = [pygame.image.load('Sprites/R1_.png'), pygame.image.load('Sprites/R2_.png'), pygame.image.load('Sprites/R3_.png'), pygame.image.load('Sprites/R4_.png'), pygame.image.load('Sprites/R5_.png'), pygame.image.load('Sprites/R6_.png'), pygame.image.load('Sprites/R7_.png'), pygame.image.load('Sprites/R8_.png'), pygame.image.load('Sprites/R9_.png'),pygame.image.load('Sprites/ShootingR_.png')]
+walkLeft = [pygame.image.load('Sprites/L1_.png'), pygame.image.load('Sprites/L2_.png'), pygame.image.load('Sprites/L3_.png'), pygame.image.load('Sprites/L4_.png'), pygame.image.load('Sprites/L5_.png'), pygame.image.load('Sprites/L6_.png'), pygame.image.load('Sprites/L7_.png'), pygame.image.load('Sprites/L8_.png'), pygame.image.load('Sprites/L9_.png'),pygame.image.load('Sprites/ShootingL_.png')]
+bg = pygame.image.load(Sprites/'bg.png')
+end = pygame.image.load('Sprites/EndGame_.png')
+char = pygame.image.load('Sprites/standing_.png')
 
 clock = pygame.time.Clock()
 score = 0
@@ -85,8 +85,8 @@ class Player(object):
 
         
 class AI_Enemy:
-    walkRight = [pygame.image.load('EnemyR1_.png'), pygame.image.load('EnemyR2_.png'), pygame.image.load('EnemyR3_.png'), pygame.image.load('EnemyR4_.png'), pygame.image.load('EnemyR5_.png'), pygame.image.load('EnemyR6_.png'), pygame.image.load('EnemyR7_.png'), pygame.image.load('EnemyR8_.png'), pygame.image.load('EnemyR9_.png'),pygame.image.load('ShootingR_.png')]
-    walkLeft = [pygame.image.load('EnemyL1_.png'), pygame.image.load('EnemyL2_.png'), pygame.image.load('EnemyL3_.png'), pygame.image.load('EnemyL4_.png'), pygame.image.load('EnemyL5_.png'), pygame.image.load('EnemyL6_.png'), pygame.image.load('EnemyL7_.png'), pygame.image.load('EnemyL8_.png'), pygame.image.load('EnemyL9_.png'),pygame.image.load('ShootingL_.png')]
+    walkRight = [pygame.image.load('Sprites/EnemyR1_.png'), pygame.image.load('Sprites/EnemyR2_.png'), pygame.image.load('Sprites/EnemyR3_.png'), pygame.image.load('Sprites/EnemyR4_.png'), pygame.image.load('Sprites/EnemyR5_.png'), pygame.image.load('Sprites/EnemyR6_.png'), pygame.image.load('Sprites/EnemyR7_.png'), pygame.image.load('Sprites/EnemyR8_.png'), pygame.image.load('Sprites/EnemyR9_.png'),pygame.image.load('Sprites/ShootingR_.png')]
+    walkLeft = [pygame.image.load('Sprites/EnemyL1_.png'), pygame.image.load('Sprites/EnemyL2_.png'), pygame.image.load('Sprites/EnemyL3_.png'), pygame.image.load('Sprites/EnemyL4_.png'), pygame.image.load('Sprites/EnemyL5_.png'), pygame.image.load('Sprites/EnemyL6_.png'), pygame.image.load('Sprites/EnemyL7_.png'), pygame.image.load('Sprites/EnemyL8_.png'), pygame.image.load('Sprites/EnemyL9_.png'),pygame.image.load('Sprites/ShootingL_.png')]
 
     def __init__(self,x,y,height,width,end):
         self.x = x
@@ -147,7 +147,7 @@ class Princess:
         self.height = height
         self.width = width
     def draw(self,win):
-        win.blit(pygame.image.load('Princess_.png'),(self.x,self.y))
+        win.blit(pygame.image.load('Sprites/Princess_.png'),(self.x,self.y))
         
       
 
@@ -363,7 +363,7 @@ while run:
     
     redraw()
 
-win.blit(pygame.image.load('EndGame_.png'),(0,0))
+win.blit(pygame.image.load(Sprites/'EndGame_.png'),(0,0))
 pygame.display.update()
 pygame.time.delay(3000)
 pygame.quit()
