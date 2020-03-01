@@ -17,7 +17,7 @@ pygame.display.set_caption("Stick Figure Game")
 
 walkRight = [pygame.image.load('Sprites/R1_.png'), pygame.image.load('Sprites/R2_.png'), pygame.image.load('Sprites/R3_.png'), pygame.image.load('Sprites/R4_.png'), pygame.image.load('Sprites/R5_.png'), pygame.image.load('Sprites/R6_.png'), pygame.image.load('Sprites/R7_.png'), pygame.image.load('Sprites/R8_.png'), pygame.image.load('Sprites/R9_.png'),pygame.image.load('Sprites/ShootingR_.png')]
 walkLeft = [pygame.image.load('Sprites/L1_.png'), pygame.image.load('Sprites/L2_.png'), pygame.image.load('Sprites/L3_.png'), pygame.image.load('Sprites/L4_.png'), pygame.image.load('Sprites/L5_.png'), pygame.image.load('Sprites/L6_.png'), pygame.image.load('Sprites/L7_.png'), pygame.image.load('Sprites/L8_.png'), pygame.image.load('Sprites/L9_.png'),pygame.image.load('Sprites/ShootingL_.png')]
-bg = pygame.image.load(Sprites/'bg.png')
+bg = pygame.image.load('Sprites/bg.png')
 end = pygame.image.load('Sprites/EndGame_.png')
 char = pygame.image.load('Sprites/standing_.png')
 
